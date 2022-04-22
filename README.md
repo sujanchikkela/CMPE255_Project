@@ -1,7 +1,7 @@
 # CMPE255_Project
 ## Project Members and Collaboration Plan:
 Members:
-Member 1 Name: Niranjan Reddy Masapati
+Member 1 Name: Niranjan Reddy Masapeta
 Member 2 Name: Purna Sai Mahesh Goud Palagani
 Member 3 Name: Sujan Rao Chikkela
 Member 4 Name: Utsav Savaliya
@@ -12,7 +12,6 @@ Member 4 Name: Utsav Savaliya
 ## Main Goal Statement:
 Using past usage patterns for bike rentals, to forecasting demand for bike rental services in future.
 Project Objectives:
-To measure the performance of our model using techniques like random forest, logistic regression, support vector machine etc and choose which gives the best results
-To forecast bike rental demand in the Capital Bikeshare program in Washington, D.C. by combining historical usage patterns with weather data in order to forecast bike rental demand. 
+Apply various ML techniques for forecasting and compare the performances of models.
 ## References:
 OpenML :Repository:https://www.openml.org/search?type=data&status=active&id=43486&sort=runs
