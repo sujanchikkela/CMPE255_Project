@@ -1,10 +1,11 @@
-# CMPE255_Project
-## Project Members and Collaboration Plan:
-Members:
-Member 1 Name: Niranjan Reddy Masapeta
-Member 2 Name: Purna Sai Mahesh Goud Palagani
-Member 3 Name: Sujan Rao Chikkela
-Member 4 Name: Utsav Savaliya
+# CMPE255-Bike-Sharing-Washington-DC
+## Project Members:
+| Project Member | GithubProfile |
+| ----- | ----- |
+| Niranjan Reddy Masapeta | https://github.com/Neeraj-MSSJ |
+| Purna Sai Mahesh Goud Palagani | https://github.com/Maheshpalagani78 |
+| Sujan Rao Chikkela |https://github.com/sujanchikkela |
+| Utsav Savaliya | https://github.com/utsavsavaliya |
 ## Collaboration Plan:
 -          To coordinate at regular intervals and discuss action plans.
 -          Zoom meeting and SJSU Gmail will be our preferred mode of communication.
@@ -50,5 +51,5 @@ Apply various ML techniques for forecasting and compare the performances of mode
 | holiday | indicates whether the day is a holiday or not |
   </details>
   
-## References:
-OpenML :Repository:https://www.openml.org/search?type=data&status=active&id=43486&sort=runs
+## Dataset Source:
+https://www.openml.org/search?type=data&status=active&id=43486&sort=runs
