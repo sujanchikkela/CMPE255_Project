@@ -1,6 +1,6 @@
 # CMPE255-Bike-Sharing-Washington-DC
 ## Project Members:
-| Project Member | GithubProfile |
+| Project Members | GitHub-Profile-Link | 
 | ----- | ----- |
 | Niranjan Reddy Masapeta | https://github.com/Neeraj-MSSJ |
 | Purna Sai Mahesh Goud Palagani | https://github.com/Maheshpalagani78 |
