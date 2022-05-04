@@ -100,6 +100,19 @@ In the above plot, we are plotting scatter plots between the temperature values 
 ![heatmap_df](/paper/images/heatmap_df.jpg)<br/><br/>
 The heatmap above provides more accurate relation among the variables. There is no significant correlation between wind, precip and the target variable but we can see that the temperature features has good amount with the target variable
 
+**5. Time-series specific analysis:**
+Since our data is time-series based, we will have time-series specific analysis plots.
+- line plot of total customers over time
+![time_plot](/page/images/time_plot.jpg)<br/><br/>
+We can see from the above plot that our time series problem is non-stationary. We have to deal with this before modelling part. 
+
+**6. Further Analysis:** We plan to do further analysis to find out if our series is stationary or non-stationary using Augmented Dickey-Fuller (ADF) Test and Kwiatkowski–Phillips–Schmidt–Shin (KPSS) test. ADF test has hypothesis testing for difference stationary where as KPSS test looks for trend stationarity in the series. If our series has non-stationarity, we will convert our series to stationary using following methods:
+- Differencing: Removes series dependencies on time. 
+- Detrending: Removes trend effects from dataset
+- Transformation: Converts into stationary using log transfer method
+
+**7. Data Modelling:** After converting our time-series data to stationary, we will move to modelling the data. Our tentative plan for now is to perform a naive-univariate prediction only using the target variable. We will next use Random forest and then use ensemble methods at advanced level to analyse and compare the performance of different approaches. 
+
 # Comparisons
 
 # Example Analysis
