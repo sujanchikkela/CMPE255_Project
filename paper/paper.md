@@ -103,7 +103,7 @@ The heatmap above provides more accurate relation among the variables. There is 
 **5. Time-series specific analysis:**
 Since our data is time-series based, we will have time-series specific analysis plots.
 - line plot of total customers over time
-![time_plot](/page/images/time_plot.jpg)<br/><br/>
+![time_plot](/paper/images/time_plot.jpg)<br/><br/>
 We can see from the above plot that our time series problem is non-stationary. We have to deal with this before modelling part. 
 
 **6. Further Analysis:** We plan to do further analysis to find out if our series is stationary or non-stationary using Augmented Dickey-Fuller (ADF) Test and Kwiatkowski–Phillips–Schmidt–Shin (KPSS) test. ADF test has hypothesis testing for difference stationary where as KPSS test looks for trend stationarity in the series. If our series has non-stationarity, we will convert our series to stationary using following methods:
