@@ -11,7 +11,7 @@
 -          Zoom meeting and SJSU Gmail will be our preferred mode of communication.
 -          We plan to use GitHub repository for code collaboration purposes.
 ## Main Goal Statement:
-Using past usage patterns for bike rentals, to forecasting demand for bike rental services in future.
+Using past usage patterns for bike rentals, to forecast demand for bike rental services in future.
 Project Objectives:
 Apply various ML techniques for forecasting and compare the performances of models.
 
