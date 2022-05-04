@@ -102,7 +102,7 @@ The heatmap above provides more accurate relation among the variables. There is 
 
 **5. Time-series specific analysis:**
 Since our data is time-series based, we will have time-series specific analysis plots.
-- line plot of total customers over time
+- line plot of total customers over time<br/>
 ![time_plot](/paper/images/time_plot.jpg)<br/><br/>
 We can see from the above plot that our time series problem is non-stationary. We have to deal with this before modelling part. 
 
