@@ -42,23 +42,15 @@ We have a dataset with data collected from January 1st 2011 to December 31st 201
 Our goal of the project is to forecast the number of customers expected to rent bikes given the previous data. Before jumping into data modelling, we have to process and clean the data to prepare the dataset for modelling. We will go through the data cleaning, data analysis and data processing in this section.
 **1. Data Collection:** We have used dataset from openml. The link to the dataset is https://www.openml.org/search?type=data&status=active&id=43486&sort=runs, The dataset contains 2922 entries and 23 features. The entries are days from Jan 1st 2011 to Dec 31st 2018.
 
-
 **2. Data Cleaning:** We have cleaned the data by removing null values from the data. As this is a time-series data, we cannot directly remove the entries even if the number of missing values is less as time series is a continuous data. So we have filled the missing values using meaningful methods such as forwadfill and values whereever it is appropriate. In the case of weather features, we replaced missing values with 0s as the data columns contains either 0 or 1 as its value by meaning. In case of customers, we used forward filling method as the data is time-series, so we assumed data would be closer to the entry of before date. In case of temp_avg, we calculated the average of max temperature and min temperature for now. (We are planning to fit a linear estimate with available data using temp_max, temp_min as features and temp_avg as target variable. Once we fit the model, we will fill the missing values using the trained model to get more accurate data)
 
-
-
-
 **3. Create new features:** We have created new features by merging the weather attributes to simply the data analysis and modelling. All the similar weather conditions have been categorised into three groups: ice, rain and fog. We also created year, month and day of the week from given datetime variable to gain insights from the data on customer behaviour.
-
-
-
-
 
 **4. Data Analysis and Visualisation:**
 We have plotted the following plots to infer few observations
 - Box plot of total customers by each year
 ![box_plot_by_year](/paper/images/box_plot_by_year.jpg)
-We can infer from the above plot that the no of registered kept increasing overall during the years. The growth is fastest in the initial years and even though customers were increasing, the growth rate decreased during the recent years
+We can infer from the above plot that the no of registered kept increasing overall during the years. The growth is fastest in the initial years and even though customers were increasing, the growth rate decreased during the recent years<br/><br/>
 
 
 
@@ -66,7 +58,7 @@ We can infer from the above plot that the no of registered kept increasing overa
 
 - Box plot of total customers by month
 ![box_plot_by_month](/paper/images/box_plot_by_month.jpg)
-We can infer from the above plot that the number of customers were higher during the months of April to October typically during Summer and Fall where temperatures are at high compared to Spring and Winter where temperatures are too low so we can see that there are less number of customers overall during those seasons. We can also observe that there are few outliers we on a particular day in february for example, more number of people registered. We can assume there might be few special events that has caused more users to register on that particular day.
+We can infer from the above plot that the number of customers were higher during the months of April to October typically during Summer and Fall where temperatures are at high compared to Spring and Winter where temperatures are too low so we can see that there are less number of customers overall during those seasons. We can also observe that there are few outliers we on a particular day in february for example, more number of people registered. We can assume there might be few special events that has caused more users to register on that particular day.<br/><br/>
 
 
 
@@ -74,7 +66,7 @@ We can infer from the above plot that the number of customers were higher during
 
 - Box plot of total customers by day of the week
 ![box_plot_by_day](/paper/images/box_plot_by_day.jpg)
-From the above plot we can infer that the number of customers are slightly more during the weekdays compared to weekends. We can assume that many people travel to workplaces during weekdays and they use more rental bikes hence the higher number on weekdays
+From the above plot we can infer that the number of customers are slightly more during the weekdays compared to weekends. We can assume that many people travel to workplaces during weekdays and they use more rental bikes hence the higher number on weekdays<br/><br/>
 
 
 
@@ -82,7 +74,7 @@ From the above plot we can infer that the number of customers are slightly more 
 
 - Box plot of total customers by weather
 ![box_plot_by_weather](/paper/images/box_plot_by_weather.jpg)
-From the plot above, we can analyse the customers behaviour during each particular weather conditions. Rain has only slight effect on the number of customers registered where as fog has a slightly more effect on the demand. But during the snow times, the demand for the rental bikes is very less as less cutomers chose to ride the bikes during snow.
+From the plot above, we can analyse the customers behaviour during each particular weather conditions. Rain has only slight effect on the number of customers registered where as fog has a slightly more effect on the demand. But during the snow times, the demand for the rental bikes is very less as less cutomers chose to ride the bikes during snow.<br/><br/>
 
 
 
@@ -90,7 +82,7 @@ From the plot above, we can analyse the customers behaviour during each particul
 
 - Box plot of the total customers by holiday
 ![box_plot_by_holiday](/paper/images/box_plot_by_holiday.jpg)
-In the above plot we can see that, more number of customers booked bikes during non-holidays compared to holidays. We can deduce that going to work has an effect on the demand for the bikes from the above plot
+In the above plot we can see that, more number of customers booked bikes during non-holidays compared to holidays. We can deduce that going to work has an effect on the demand for the bikes from the above plot<br/><br/>
 
 
 
@@ -98,7 +90,7 @@ In the above plot we can see that, more number of customers booked bikes during 
 
 - Scatter plots of temperatures vs total customers
 ![pair_plot](/paper/images/pair_plot_df.jpg)
-In the above plot, we are plotting scatter plots between the temperature values and total customers to observe the relation between them. We can see that there is a perfect linear relation between all temperature values. Also, the temperature features have a medium level linear relationship with the total customers registered
+In the above plot, we are plotting scatter plots between the temperature values and total customers to observe the relation between them. We can see that there is a perfect linear relation between all temperature values. Also, the temperature features have a medium level linear relationship with the total customers registered<br/><br/>
 
 
 
@@ -106,7 +98,7 @@ In the above plot, we are plotting scatter plots between the temperature values 
 
 - Heatmap plot for correlation
 ![heatmap_df](/paper/images/heatmap_df.jpg)
-The heatmap above provides more accurate relation among the variables. There is no significant correlation between wind, precip and the target variable but we can see that the temperature features has good amount with the target variable
+The heatmap above provides more accurate relation among the variables. There is no significant correlation between wind, precip and the target variable but we can see that the temperature features has good amount with the target variable<br/><br/>
 
 # Comparisons
 
