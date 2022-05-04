@@ -21,17 +21,17 @@ Users can take the bike from one location (station) and return it to another pla
 
 It then asks the user if they want to examine the raw data (5 rows of data at first) or not after receiving the user input. The program prints the following information after receiving the input:
 
-*Date
-*Average Temperature
-*Minimum Temperature
-*Maximum Temperature
-*Observed Temperature
-*Precipitation
-*Wind and climate details
-*Total Customers
-*Holiday details
-*Registered users details
-*Casual users details
+* Date
+* Average Temperature
+* Minimum Temperature
+* Maximum Temperature
+* Observed Temperature
+* Precipitation
+* Wind and climate details
+* Total Customers
+* Holiday details
+* Registered users details
+* Casual users details
 
 
 It should also be noted that each city gives distinct information, as shown in the printout above. Even though the information is the same, the column names and formatting may change. Trim and sanitize the data to make things as easy as possible when we get to the real exploration. Cleaning the data ensures that data formats are uniform across columns, whilst trimming the data focuses solely on the areas of the data we're most interested in, making exploration simpler.
