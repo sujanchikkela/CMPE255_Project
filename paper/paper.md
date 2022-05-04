@@ -39,6 +39,8 @@ It should also be noted that each city gives distinct information, as shown in t
 
 # Methods
 
+
+![box_plot_by_year](/images/box_plot_by_year.png)
 # Comparisons
 
 # Example Analysis
