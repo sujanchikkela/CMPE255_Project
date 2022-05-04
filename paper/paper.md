@@ -17,24 +17,7 @@ A user of the system may easily reach a dock inside the system to unlock or retu
 
 # Introduction
 
-Users can take the bike from one location (station) and return it to another place (another station) that belongs to the system when their trip is over, or they can return to the same starting point again, depending on the system.
-
-It then asks the user if they want to examine the raw data (5 rows of data at first) or not after receiving the user input. The program prints the following information after receiving the input:
-
-* Date
-* Average Temperature
-* Minimum Temperature
-* Maximum Temperature
-* Observed Temperature
-* Precipitation
-* Wind and climate details
-* Total Customers
-* Holiday details
-* Registered users details
-* Casual users details
-
-
-It should also be noted that each city gives distinct information, as shown in the printout above. Even though the information is the same, the column names and formatting may change. Trim and sanitize the data to make things as easy as possible when we get to the real exploration. Cleaning the data ensures that data formats are uniform across columns, whilst trimming the data focuses solely on the areas of the data we're most interested in, making exploration simpler.
+Time-series analysis and forecasting is one of the most popular data analysis method from long time ago. Time series forecasting in statistics is a method where we predict variables that change over time. We observe the historical data that changed over time and use that knowledge to observe the patterns and changes in the future. There are many use cases of time-series analysis and forecasting in many domains such as retail market, sales prection, stocks prediction and many more. In our problem, we have a time-series data related to bike rental service where customers rent a bike for the day and we need to forecast the demand i.e. the number customers who will rent the bike depending on the conditions around him.
 
 We have a dataset with data collected from January 1st 2011 to December 31st 2018 where each row is a day with variables such as temperature, weather conditions, wind, and the number of customers who rented the bike. Our task is to analyse the customer behaviour pattern in renting the bikes with regards to the various factors including temperature, time of the year, weather conditions and all other features we extract from the data. The dataset is a time-series data so we are trying to forecast the demand i.e. predict the number of customers over given future data based on past time data. 
 
