@@ -1,6 +1,6 @@
 ---
 Title: Rental Bike Demand Forecasting
-Date: "April 2022"
+Date: "April 2022"        
 Author: Team 6, CMPE 255, San José State University
 
 Header-includes: |
