@@ -40,6 +40,7 @@ We have a dataset with data collected from January 1st 2011 to December 31st 201
 
 # Methods
 Our goal of the project is to forecast the number of customers expected to rent bikes given the previous data. Before jumping into data modelling, we have to process and clean the data to prepare the dataset for modelling. We will go through the data cleaning, data analysis and data processing in this section.
+
 **1. Data Collection:** We have used dataset from openml. The link to the dataset is https://www.openml.org/search?type=data&status=active&id=43486&sort=runs, The dataset contains 2922 entries and 23 features. The entries are days from Jan 1st 2011 to Dec 31st 2018.
 
 **2. Data Cleaning:** We have cleaned the data by removing null values from the data. As this is a time-series data, we cannot directly remove the entries even if the number of missing values is less as time series is a continuous data. So we have filled the missing values using meaningful methods such as forwadfill and values whereever it is appropriate. In the case of weather features, we replaced missing values with 0s as the data columns contains either 0 or 1 as its value by meaning. In case of customers, we used forward filling method as the data is time-series, so we assumed data would be closer to the entry of before date. In case of temp_avg, we calculated the average of max temperature and min temperature for now. (We are planning to fit a linear estimate with available data using temp_max, temp_min as features and temp_avg as target variable. Once we fit the model, we will fill the missing values using the trained model to get more accurate data)
@@ -50,7 +51,7 @@ Our goal of the project is to forecast the number of customers expected to rent 
 We have plotted the following plots to infer few observations
 - Box plot of total customers by each year<br/>
 ![box_plot_by_year](/paper/images/box_plot_by_year.jpg)<br/><br/>
-We can infer from the above plot that the no of registered kept increasing overall during the years. The growth is fastest in the initial years and even though customers were increasing, the growth rate decreased during the recent years
+We can infer from the above plot that the no of registered users kept increasing overall during the years. The growth is fastest in the initial years and even though customers were increasing, the growth rate decreased during the recent years
 
 
 
