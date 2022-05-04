@@ -1,9 +1,9 @@
 ---
-title: Rental Bike Demand Forecasting
-date: "April 2022"
-author: Team 6, CMPE 255, San José State University
+Title: Rental Bike Demand Forecasting
+Date: "April 2022"
+Author: Team 6, CMPE 255, San José State University
 
-header-includes: |
+Header-includes: |
   \usepackage{booktabs}
   \usepackage{caption}
 ---
