@@ -104,13 +104,15 @@ Ensemble means combining multiple models to make predictions instead of one mode
 
 **2. Boosting–** It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST. Here, the focus is to built trees sequentially in such a way that each subsequent trees is aimed at reducing the errors of the previous tree model.
   
-**Adaptive boosting**  
-  
-**Gradient boosting**
+**Adaptive Boost** 
+ AdaBoost is a decision tree with one level which is a decision tree with just one split. It builds a model and gives equal weights to all the data points and then assigns higher weights to points which shows highest errors. Now all the points which have higher weights are given more importance in the next model. It will keep training models until and unless a low error is received for the regression problem. When there is some non-linearity in our dataset this algorithm helps as it captures these non-linearities which in end contributes to better accuracy on the regression problem.
+
+
+**Gradient Boosting**
  
 As stated above sequential models are built here and they try to reduce the errors of previous models. The speciality is that errors are reduced by building a new model based on the errors of the previous model. It minimizes loss function by adding week learners with help of gradient descent.
-The hyper parameters chosen are n_estimators,Learning rate,max_depth etc.  N_estimators is the number of trees (weak learners) that should be there in the model.
-For the learning rate the low value always works better provided that there are sufficient number of trees present. Max_depth is the related to the height of the decision. There are various extension of Gradient boosting which can be explored.
+  
+The hyper parameters chosen are n_estimators,Learning rate,max_depth etc.  N_estimators is the number of trees (weak learners) that should be there in the model. For the learning rate the low value always works better provided that there are sufficient number of trees present. Max_depth is the related to the height of the decision. There are various extension of Gradient boosting which can be explored.
   
 
 **XGBoost**
