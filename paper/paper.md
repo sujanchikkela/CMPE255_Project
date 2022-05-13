@@ -108,9 +108,9 @@ Ensemble means combining multiple models to make predictions instead of one mode
 # Comparisons
 The main step in any machine learning model is the evaluation of model accuracy. The Mean absolute error, Mean Squared Error, R-Squared or Coefficient of determination and Root Mean Squared Error metrics are used to evaluate the performance/accuracy of the model in regression analysis problems.
 
-**MAE:**The Mean absolute error is the  average of the absolute difference between the predicted values and the actual values.
-**MSE:**It represents the average of the squared difference between the actual and predicted values.It measures the variance of the residuals.
-**RMSE:**The square root of Mean Squared error is Root Mean Squared Error.
+**MAE:** The Mean absolute error is the  average of the absolute difference between the predicted values and the actual values.
+**MSE:** It represents the average of the squared difference between the actual and predicted values.It measures the variance of the residuals.
+**RMSE:** The square root of Mean Squared error is Root Mean Squared Error.
 **R-squared or coefficient of determination:** It is the proportion of the variance in the dependent variable. It is a scale-free score i.e. the value of R square will be less than one only even if of the values being small or large.
 
 
