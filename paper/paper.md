@@ -103,11 +103,20 @@ Ensemble means combining multiple models to make predictions instead of one mode
 **1. Bagging–**  It means that to create different set of training subsets with replacement and output is decided based on the majority voting. For instance Random Forest
 
 **2. Boosting–** It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST. Here, the focus is to built trees sequentially in such a way that each subsequent trees is aimed at reducing the errors of the previous tree model.
+  
+**Adaptive boosting**  
+  
+**Gradient boosting**
+ 
+As stated above sequential models are built here and they try to reduce the errors of previous models. The speciality is that errors are reduced by building a new model based on the errors of the previous model. It minimizes loss function by adding week learners with help of gradient descent.
+The hyper parameters chosen are n_estimators,Learning rate,max_depth etc.  N_estimators is the number of trees (weak learners) that should be there in the model.
+For the learning rate the low value always works better provided that there are sufficient number of trees present. Max_depth is the related to the height of the decision. There are various extension of Gradient boosting which can be explored.
+  
 
 **XGBoost**
   
- XGboost is one of the methods under boosting. It outperforms other models due to following features:
- XGboost penalizes models through L2 and L1 regularization which is used to prevent overfitting. Our data contains one hot encoded values which shows that data is sparse. So there is a need of sparsity aware split finding algorithm for handling different types of sparsity patterns in data. In terms of computation also XGboost outperforms as it uses multiple cores on CPU. It is used when there is large number of training samples. Also when there is a mix numeric and categorical data XGboost is preferred.
+XGboost stands for eXtreme Gradient Boosting.It is one of the methods under boosting. It outperforms other models due to following features:
+XGboost penalizes models through L2 and L1 regularization which is used to prevent overfitting. Our data contains one hot encoded values which shows that data is sparse. So there is a need of sparsity aware split finding algorithm for handling different types of sparsity patterns in data. In terms of computation also XGboost outperforms as it uses multiple cores on CPU. It is used when there is large number of training samples. Also when there is a mix numerical and categorical data XGboost is preferred.
 
 
 # Comparisons
@@ -115,7 +124,7 @@ The main step in any machine learning model is the evaluation of model accuracy.
 
 **MAE:** The Mean absolute error is the  average of the absolute difference between the predicted values and the actual values.
   
-**MSE:** It represents the average of the squared difference between the actual and predicted values.It measures the variance of the residuals.
+**MSE:** It represents the average of the squared difference between the actual and predicted values. It measures the variance of the errors.
   
 **RMSE:** The square root of Mean Squared error is Root Mean Squared Error.
   
