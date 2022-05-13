@@ -96,6 +96,9 @@ We can see from the above plot that our time series problem is non-stationary. W
 - Transformation: Converts into stationary using log transfer method
 
 **7. Data Modelling:** After converting our time-series data to stationary, we will move to modelling the data. Our tentative plan for now is to perform a naive-univariate prediction only using the target variable. We will next use Random forest and then use ensemble methods at advanced level to analyse and compare the performance of different approaches. 
+  
+#Models
+Ensemble means combining multiple models to make predictions instead of one model. 
 
 # Comparisons
 
