@@ -100,9 +100,9 @@ We can see from the above plot that our time series problem is non-stationary. W
 # Models
 Ensemble means combining multiple models to make predictions instead of one model. Ensemble uses two types of methods:
 
-**1. Bagging–  It means that to create different set of training subsets with replacement and output is decided based on the majority voting. For instance Random Forest
+**1. Bagging–**  It means that to create different set of training subsets with replacement and output is decided based on the majority voting. For instance Random Forest
 
-**2. Boosting– It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST
+**2. Boosting–** It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST
 
 
 # Comparisons
