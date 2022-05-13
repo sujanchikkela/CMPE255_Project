@@ -98,11 +98,16 @@ We can see from the above plot that our time series problem is non-stationary. W
 **7. Data Modelling:** After converting our time-series data to stationary, we will move to modelling the data. Our tentative plan for now is to perform a naive-univariate prediction only using the target variable. We will next use Random forest and then use ensemble methods at advanced level to analyse and compare the performance of different approaches. 
   
 # Models
-Ensemble means combining multiple models to make predictions instead of one model. Ensemble uses two types of methods:
+Ensemble means combining multiple models to make predictions instead of one model.Ensemble learning offers a out of the box approach to combine the predictive power of multiple learning models. The models that participates in forming the ensemble is called base learners. Ensemble uses two types of methods:
 
 **1. Bagging–**  It means that to create different set of training subsets with replacement and output is decided based on the majority voting. For instance Random Forest
 
-**2. Boosting–** It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST
+**2. Boosting–** It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST. Here, the focus is to built trees sequentially in such a way that each subsequent trees is aimed at reducing the errors of the previous tree model.
+
+**XGBoost**
+  
+ XGboost is one of the methods under boosting. It outperforms other models due to following features:
+ XGboost penalizes models through L2 and L1 regularization which is used to prevent overfitting. Our data contains one hot encoded values which shows that data is sparse. So there is a need of sparsity aware split finding algorithm for handling different types of sparsity patterns in data. In terms of computation also XGboost outperforms as it uses multiple cores on CPU. It is used when there is large number of training samples. Also when there is a mix numeric and categorical data XGboost is preferred.
 
 
 # Comparisons
@@ -117,7 +122,8 @@ The main step in any machine learning model is the evaluation of model accuracy.
 **R-squared or coefficient of determination:** It is the proportion of the variance in the dependent variable. It is a scale-free score i.e. the value of R square will be less than one only even if of the values being small or large.
 
 How to choose between them for the determination of the accuracy of the model?
-Mean Squared Error(MSE) and Root Mean Square Error penalizes the large prediction errors with reagrd to Mean Absolute Error (MAE). But RMSE is generally preferred than MSE for the evaluation of the performance of the regression problems compared to other models. The lower value of MAE, MSE, and RMSE indicates higher accuracy of a regression model. MSE is a easy in terms of computation time unlike MAE. It is because former is differentiable while the later is non-differentiable. Thus, mostly RMSE is used as metric for calculating accuracy in terms of some loss function. For the comparison of accuracy of different models, RMSE is preferred than R-Squared
+
+Mean Squared Error(MSE) and Root Mean Square Error penalizes the large prediction errors with regard to Mean Absolute Error (MAE). But RMSE is generally preferred than MSE for the evaluation of the performance of the regression problems compared to other models. The lower value of MAE, MSE, and RMSE indicates higher accuracy of a regression model. MSE is a easy in terms of computation time unlike MAE. It is because former is differentiable while the later is non-differentiable. Thus, mostly RMSE is used as metric for calculating accuracy in terms of some loss function. For the comparison of accuracy of different models, RMSE is preferred than R-Squared
 To conclude both RMSE and R-Squared tells how well a regression model is best suited for a particular dataset . To be specific RMSE tells how a regression model is used to predict the value of a response variable while on the other hand R-Squared tells how  well the predicted variables is able to tell about the variation in the response variable type.
 
 
