@@ -98,7 +98,12 @@ We can see from the above plot that our time series problem is non-stationary. W
 **7. Data Modelling:** After converting our time-series data to stationary, we will move to modelling the data. Our tentative plan for now is to perform a naive-univariate prediction only using the target variable. We will next use Random forest and then use ensemble methods at advanced level to analyse and compare the performance of different approaches. 
   
 # Models
-Ensemble means combining multiple models to make predictions instead of one model. 
+Ensemble means combining multiple models to make predictions instead of one model. Ensemble uses two types of methods:
+
+**1. Bagging–  It means that to create different set of training subsets with replacement and output is decided based on the majority voting. For instance Random Forest
+
+**2. Boosting– It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST
+
 
 # Comparisons
 
