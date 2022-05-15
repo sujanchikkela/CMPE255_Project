@@ -129,6 +129,12 @@ XGboost stands for eXtreme Gradient Boosting.It is one of the methods under boos
 XGboost penalizes models through L2 and L1 regularization which is used to prevent overfitting. Our data contains one hot encoded values which shows that data is sparse. So there is a need of sparsity aware split finding algorithm for handling different types of sparsity patterns in data. In terms of computation also XGboost outperforms as it uses multiple cores on CPU. It is used when there is large number of training samples. Also when there is a mix numerical and categorical data XGboost is preferred.
 
 
+**CatBoost**
+
+To handle categorical variables is a tiresome operation, especially when there is a large number of such variables. When your categorical variables have too many labels, performing one-hot-encoding such data exponentially increases the dimension of the model and it becomes really tedious of preprocessing and training the dataset while avoiding overfitting.
+  
+The benefit that CatBoost provides is that it can automatically deal with categorical variables and does not require extensive data preprocessing before giving the data to the machine learning model.
+
 # Comparisons
 The main step in any machine learning model is the evaluation of model accuracy. The Mean absolute error, Mean Squared Error, R-Squared or Coefficient of determination and Root Mean Squared Error metrics are used to evaluate the performance/accuracy of the model in regression analysis problems.
 
