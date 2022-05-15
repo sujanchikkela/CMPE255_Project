@@ -107,13 +107,10 @@ Ensemble means combining multiple models to make predictions instead of one mode
 **Bagging meta-estimator** 
  It is an ensembling method which includes steps like creating random subsets from dataset which includes all features, than a base estimator is set on each of these sets and at the end all the predicted results from each of the subset model is combined to get result.The hyper parameters used are 
   
- -base_estimator: It indicates the base estimator  to fit a random subsets of a dataset
- -n_estimators: Number of base estimator which is required
- -n_jobs: number of jobs to be run in parallel
- -random_state:It is used to specify the method of random split. This parameter is used when comparison between 2 models is to be needed.
-  
-  
-  
+ - base_estimator: It indicates the base estimator  to fit a random subsets of a dataset
+ - n_estimators: Number of base estimator which is required
+ - n_jobs: number of jobs to be run in parallel
+ - random_state:It is used to specify the method of random split. This parameter is used when comparison between 2 models is to be needed.
   
 **Adaptive Boost** 
  AdaBoost is a decision tree with one level which is a decision tree with just one split. It builds a model and gives equal weights to all the data points and then assigns higher weights to points which shows highest errors. Now all the points which have higher weights are given more importance in the next model. It will keep training models until and unless a low error is received for the regression problem. When there is some non-linearity in our dataset this algorithm helps as it captures these non-linearities which in end contributes to better accuracy on the regression problem.
