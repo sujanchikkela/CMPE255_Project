@@ -154,8 +154,8 @@ To conclude both RMSE and R-Squared tells how well a regression model is best su
 Also random_state hyperparameter of model discussed is used for comparison between different models
 
 # Example Analysis
-
+  
 # Conclusions
-
+To conclude,in this project, we tried to explore various regression techniques on a bike sharing dataset. We compared the performance of these regressors by using many metrics used for determination of the accuracy.
 
 # References
