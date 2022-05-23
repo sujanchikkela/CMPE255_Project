@@ -165,5 +165,7 @@ Also random_state hyperparameter of model discussed is used for comparison betwe
 # Example Analysis
   
 # Conclusions
+To conclude,in this project, we tried to explore various regression techniques on a bike sharing dataset. We compared the performance of these regressors by using many metrics used for determination of the accuracy. Ada Boost regressor significantly outperformed other regressors 
+in terms of all the metrics used for comparison
   
 # References
