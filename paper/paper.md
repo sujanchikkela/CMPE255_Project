@@ -103,7 +103,64 @@ We can see from the above plot that our time series problem is non-stationary. W
   
 # Models
 
+Ensemble means combining multiple models to make predictions instead of one model.Ensemble learning offers a out of the box approach to combine the predictive power of multiple learning models. The models that participates in forming the ensemble is called base learners. Ensemble uses two types of methods:
+
+**1. Bagging–**  It means that to create different set of training subsets with replacement and output is decided based on the majority voting. For instance Random Forest
+
+**2. Boosting–** It uses sequential models with the combination of weak learners and strong learners that result into high accuracy.For instance XG BOOST, ADA BOOST, Gradient BOOST. Here, the focus is to built trees sequentially in such a way that each subsequent trees is aimed at reducing the errors of the previous tree model.
+
+**Bagging meta-estimator** 
+ It is an ensembling method which includes steps like creating random subsets from dataset which includes all features, than a base estimator is set on each of these sets and at the end all the predicted results from each of the subset model is combined to get result.The hyper parameters used are 
+
+ - base_estimator: It indicates the base estimator  to fit a random subsets of a dataset
+ - n_estimators: Number of base estimator which is required
+ - n_jobs: number of jobs to be run in parallel
+ - random_state:It is used to specify the method of random split. This parameter is used when comparison between 2 models is to be needed.
+
+**Adaptive Boost** 
+
+  AdaBoost is a decision tree with one level which is a decision tree with just one split. It builds a model and gives equal weights to all the data points and then assigns higher weights to points which shows highest errors. Now all the points which have higher weights are given more importance in the next model. It will keep training models until and unless a low error is received for the regression problem. When there is some non-linearity in our dataset this algorithm helps as it captures these non-linearities which in end contributes to better accuracy on the regression problem.
+
+
+**Gradient Boosting**
+
+As stated above sequential models are built here and they try to reduce the errors of previous models. The speciality is that errors are reduced by building a new model based on the errors of the previous model. It minimizes loss function by adding week learners with help of gradient descent.
+
+The hyper parameters chosen are n_estimators,Learning rate,max_depth etc.  N_estimators is the number of trees (weak learners) that should be there in the model. For the learning rate the low value always works better provided that there are sufficient number of trees present. Max_depth is the related to the height of the decision. There are various extension of Gradient boosting which can be explored.
+
+
+**XGBoost**
+
+XGboost stands for eXtreme Gradient Boosting.It is one of the methods under boosting. It outperforms other models due to following features:
+XGboost penalizes models through L2 and L1 regularization which is used to prevent overfitting. Our data contains one hot encoded values which shows that data is sparse. So there is a need of sparsity aware split finding algorithm for handling different types of sparsity patterns in data. In terms of computation also XGboost outperforms as it uses multiple cores on CPU. It is used when there is large number of training samples. Also when there is a mix numerical and categorical data XGboost is preferred.
+
+
+**CatBoost**
+
+To handle categorical variables is a tiresome operation, especially when there is a large number of such variables. When your categorical variables have too many labels, performing one-hot-encoding such data exponentially increases the dimension of the model and it becomes really tedious of preprocessing and training the dataset while avoiding overfitting.
+
+The benefit that CatBoost provides is that it can automatically deal with categorical variables and does not require extensive data preprocessing before giving the data to the machine learning model.
+
+
+
 # Comparisons
+  
+The main step in any machine learning model is the evaluation of model accuracy. The Mean absolute error, Mean Squared Error, R-Squared or Coefficient of determination and Root Mean Squared Error metrics are used to evaluate the performance/accuracy of the model in regression analysis problems.
+
+**MAE:** The Mean absolute error is the  average of the absolute difference between the predicted values and the actual values.
+
+**MSE:** It represents the average of the squared difference between the actual and predicted values. It measures the variance of the errors.
+
+**RMSE:** The square root of Mean Squared error is Root Mean Squared Error.
+
+**R-squared or coefficient of determination:** It is the proportion of the variance in the dependent variable. It is a scale-free score i.e. the value of R square will be less than one only even if of the values being small or large.
+
+How to choose between them for the determination of the accuracy of the model?
+
+Mean Squared Error(MSE) and Root Mean Square Error penalizes the large prediction errors with regard to Mean Absolute Error (MAE). But RMSE is generally preferred than MSE for the evaluation of the performance of the regression problems compared to other models. The lower value of MAE, MSE, and RMSE indicates higher accuracy of a regression model. MSE is a easy in terms of computation time unlike MAE. It is because former is differentiable while the later is non-differentiable. Thus, mostly RMSE is used as metric for calculating accuracy in terms of some loss function. For the comparison of accuracy of different models, RMSE is preferred than R-Squared
+To conclude both RMSE and R-Squared tells how well a regression model is best suited for a particular dataset . To be specific RMSE tells how a regression model is used to predict the value of a response variable while on the other hand R-Squared tells how  well the predicted variables is able to tell about the variation in the response variable type.
+
+Also random_state hyperparameter of model discussed is used for comparison between different models
 
 # Example Analysis
   
