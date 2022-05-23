@@ -91,7 +91,7 @@ Since our data is time-series based, we will have time-series specific analysis 
 ![time_plot](/paper/images/time_plot.jpg)<br/><br/> <p>
 We can see from the above plot that our time series problem is non-stationary. We have to deal with this before modelling part. 
   
-** What is Stationary? 
+**What is Stationary?**
            When working with time-series data, 'stationarity' is one of the most important concepts that you'll encounter. Generally, stationary series are those whose properties don't change over time, such as the mean, variance, and covariance. The upward trend in the mean is clearly visible, since it varies (increases) with time. In other words, this is not a stationary series. A series is termed stationary if it does not exhibit a trend. 
 
 **6. Further Analysis:** We plan to do further analysis to find out if our series is stationary or non-stationary using some popular statistical tests one of the test is ADF(Augmented Dickey Fuller) test. It can be used to determine whether a series is stationary and determine whether a unit root exists. As a result, it can also identify whether a series has diverged. If we are unable to reject the null hypothesis, we can say the series is non-stationary, and the other test we can use is Kwiatkowski–Phillips–Schmidt–Shin (KPSS) test,  we can get an idea if a time series is stationary around a mean or linear trend, or if it is non-stationary because of the unit root. A stationary time series has statistical characteristics that remain constant over time, such as the mean and variance. ADF test has hypothesis testing for difference stationary where as KPSS test looks for trend stationarity in the series. If our series has non-stationarity, we will convert our series to stationary using following methods:
@@ -117,7 +117,8 @@ Ensemble means combining multiple models to make predictions instead of one mode
  - random_state:It is used to specify the method of random split. This parameter is used when comparison between 2 models is to be needed.
   
 **Adaptive Boost** 
- AdaBoost is a decision tree with one level which is a decision tree with just one split. It builds a model and gives equal weights to all the data points and then assigns higher weights to points which shows highest errors. Now all the points which have higher weights are given more importance in the next model. It will keep training models until and unless a low error is received for the regression problem. When there is some non-linearity in our dataset this algorithm helps as it captures these non-linearities which in end contributes to better accuracy on the regression problem.
+ 
+  AdaBoost is a decision tree with one level which is a decision tree with just one split. It builds a model and gives equal weights to all the data points and then assigns higher weights to points which shows highest errors. Now all the points which have higher weights are given more importance in the next model. It will keep training models until and unless a low error is received for the regression problem. When there is some non-linearity in our dataset this algorithm helps as it captures these non-linearities which in end contributes to better accuracy on the regression problem.
 
 
 **Gradient Boosting**
