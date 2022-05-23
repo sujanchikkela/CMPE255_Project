@@ -3,7 +3,7 @@ all: paper.md paper.bib
 		--pdf-engine=pdflatex \
 		--variable classoption=twocolumn \
 		--citeproc \
-		--filter scripts/table-filter \
+		--filter scripts/table-filter.py \
 		--filter pandoc-tablenos \
 		--filter pandoc-fignos \
 		--filter pandoc-eqnos \
