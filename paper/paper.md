@@ -162,6 +162,9 @@ To conclude both RMSE and R-Squared tells how well a regression model is best su
 
 Also random_state hyperparameter of model discussed is used for comparison between different models
 
+<br/> <p align="center"> 
+![Comparison](/paper/images/Comparison.png)<br/><br/> <p>  
+
 # Example Analysis
   
 # Conclusions
