@@ -164,7 +164,7 @@ Also random_state hyperparameter of model discussed is used for comparison betwe
 
 <br/> <p align="center"> 
 ![Comparison](/paper/images/Comparison.png)<br/><br/> <p>
-
+ 
 # Example Analysis
   
 # Conclusions
