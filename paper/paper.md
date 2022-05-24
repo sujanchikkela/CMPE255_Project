@@ -90,7 +90,11 @@ Since our data is time-series based, we will have time-series specific analysis 
 - line plot of total customers over time<br/> <p align="center"> 
 ![time_plot](/paper/images/time_plot.jpg)<br/><br/> <p>
 We can see from the above plot that our time series problem is non-stationary. We have to deal with this before modelling part. 
-  
+
+**Time Series:**
+    A stationary time series is a series whose properties such as mean, variance and autocorrelation doesn’t change over time. If the properties change over time, then it is non-stationary series. We should ensure that the series is stationary in order to forecast correctly and if the series is non-stationary, we convert it to stationary. Stationarity is preferred because if the mean and variance increase over time, it is difficult to forecast as the series is changing over time.
+Augmented Dickey Fuller (ADF) test and Kwiatkowski–Phillips–Schmidt–Shin (KPSS) test are used to evaluate if a series is stationary or non-stationary.
+ 
 **What is Stationary?**
            When working with time-series data, 'stationarity' is one of the most important concepts that you'll encounter. Generally, stationary series are those whose properties don't change over time, such as the mean, variance, and covariance. The upward trend in the mean is clearly visible, since it varies (increases) with time. In other words, this is not a stationary series. A series is termed stationary if it does not exhibit a trend. 
 
