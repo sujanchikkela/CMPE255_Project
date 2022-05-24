@@ -65,12 +65,14 @@ We keep a record of every time a client rents a bike for the day.
 | total_cust |  sum of registered and casual customers |
 | holiday | indicates whether the day is a holiday or not |
   </details>
-  
+
+## Setup
+``` pip install -r requirements.txt ```
+
 ## Dataset Summary:
 The given dataset contains the data collected on each day from 2011 to 2018. Each row in the dataset represents a day and columns represent the attributes recorded for that particular day. It is a continuous time-series data. temp_avg, temp_max, temp_min and temp_observ has data related to the temperature attributes on that particular day for each record. precip is the precipitation and wind is the wind speed observed at the point of observation. All the wt_ attributes describes the weather details on that day: for example, a value of 0 in wt_rain and 1 in wt_fog means no rain on that day and fog is present on that day. casual users are the ones who are not registered on the application and registered are the registered customers. Our target variable in the dataset is total_cust which is the summation of casual and registered users. We are trying to forecast the total_cust value to get an estimate about the demand of bicycles so we can make necessary arrangements. holiday flag indicates whether the day is a holiday or not.
 
 ## Dataset Source:
 https://www.openml.org/search?type=data&status=active&id=43486&sort=runs
 
-## Setup
-``` pip install -r requirements.txt ```
+
