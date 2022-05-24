@@ -168,8 +168,7 @@ Also random_state hyperparameter of model discussed is used for comparison betwe
 
 <br/> <p align="center"> 
 ![Comparison](/paper/images/Comparison.png)<br/><br/> <p>
- 
-# Example Analysis
+
   
 # Conclusions
 To conclude,in this project, we tried to explore various regression techniques on a bike sharing dataset. We compared the performance of these regressors by using many metrics used for determination of the accuracy. AdaBoost regressor significantly outperformed other regressors in accuracy in terms of all the metrics used for comparison but we will choose XG boost so as to avoid overfitting.
