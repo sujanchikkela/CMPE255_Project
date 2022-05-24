@@ -69,4 +69,5 @@ The given dataset contains the data collected on each day from 2011 to 2018. Eac
 ## Dataset Source:
 https://www.openml.org/search?type=data&status=active&id=43486&sort=runs
 
-## Thankyou
+## Setup
+``` pip install -r requirements.txt ```
