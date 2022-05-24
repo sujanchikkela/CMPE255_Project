@@ -8,14 +8,24 @@
 | Purna Sai Mahesh Goud Palagani | https://github.com/Maheshpalagani78 |
 | Sujan Rao Chikkela |https://github.com/sujanchikkela |
 | Utsav Savaliya | https://github.com/utsavsavaliya |
+
+
 ## Collaboration Plan:
 -          To coordinate at regular intervals and discuss action plans.
 -          Zoom meeting and SJSU Gmail will be our preferred mode of communication.
 -          We plan to use GitHub repository for code collaboration purposes.
+
+## Introduction:
+Time-series analysis has been one of the most well-known research techniques in the past. Time series analysis in insights aims to predict long-term developments. Long-term data is used to forecast future examples and changes. Time-series analysis and forecasting are used in a variety of fields, including retail market analysis, transaction forecasting, financial exchange analysis, and so on. 
+We have columns for every day of data acquired with characteristics such as temperature, weather patterns, wind speed, and the number of clients that leased the bikes in our dataset. As part of our investigation, we'd like to look at data from bicycle rentals, such as temperature, season, weather conditions, and any other relevant information. Since the dataset is a period series information, we are seeking to predict the quantity of consumers in light of prior information.
+
+
 ## Main Goal Statement:
 Using past usage patterns for bike rentals, to forecast demand for bike rental services in future.
 Project Objectives:
 Apply various ML techniques for forecasting and compare the performances of models.
+Our goal is to estimate the number of customers who will rent bicycles based on the surrounding factors. 
+We keep a record of every time a client rents a bike for the day.
 
 ## Dataset:
 <details><summary>Click to view Dataset</summary>
